@@ -6,7 +6,7 @@ rules:
     if wrong: lose life
 
 Steps:
-    Make file with word list
+    Make file/array with word list
     display letter buttons
     connect word list to our javascript to pull from
     display word, but hidden
@@ -19,3 +19,4 @@ once all that is displayed:
     when wrong letter button is pressed, hide one 'life'
     You lose screen
     you win screen
+    add event listener to buttons
