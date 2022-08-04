@@ -6,7 +6,9 @@ rules:
     if wrong: lose life
 
 Steps:
+    Make file with word list
     display letter buttons
+    connect word list to our javascript to pull from
     display word, but hidden
     display amount of lives left
     new word button
