@@ -1,4 +1,54 @@
-body .h1 {
+body {
+  background-color: #ffdada;
+  font-family: sans-serif;
+}
+body h1 {
   text-align: center;
   color: red;
+}
+body .lettersDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+body .lettersDiv button {
+  background-color: #e999a7;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-weight: 800;
+  color: #4d0303;
+}
+body .heartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .heartContainer p {
+  color: red;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+body .restartButtons {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .restartButtons button {
+  margin-left: 20px;
+  background-color: #c54e4e;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #4d0303;
+  text-align: center;
+}
+body .wordDisplay {
+  text-align: center;
+  font-size: 40px;
+  color: #2e0707;
 }

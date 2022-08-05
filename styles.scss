@@ -1,6 +1,56 @@
-body {
-    .h1 {
-        text-align: center;
+body{
+    background-color: rgb(255, 218, 218);
+    font-family: sans-serif;
+    h1 {
+         text-align: center;
         color: red;
     }
+    .lettersDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    button {
+        background-color: rgb(233, 153, 167);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        font-weight: 800;
+        color: rgb(77, 3, 3);
+    }
+}
+
+    .heartContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    p {
+        color: red;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+}
+    .restartButtons {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    button {
+        margin-left: 20px;
+        background-color: rgb(197, 78, 78);
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        font-weight: 700;
+        font-size: 20px;
+        color:rgb(77, 3, 3);
+        text-align: center;
+    }
+}
+
+    .wordDisplay {
+    text-align: center;
+    font-size: 40px;;
+    color: rgb(46, 7, 7);
+}
 }
