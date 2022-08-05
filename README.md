@@ -20,3 +20,7 @@ once all that is displayed:
     You lose screen
     you win screen
     add event listener to buttons
+    can't press the letter button if it's already been pressed
+    switch out hearts to actual hang man
+    draw 7 seperate images and change them each time
+    -can do this after implementing hearts first

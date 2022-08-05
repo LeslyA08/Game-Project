@@ -2,8 +2,9 @@ let words = ["education", "voter", "principle", "defendant", "elapse", "incentiv
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
-let displayedWord = document.querySelector("p");
+let displayedWord = document.querySelector(".wordDisplay");
 let newWord = document.querySelector(".newWord");
+let wordStatus = null;
 
 newWord.addEventListener('click', () =>{
    displayedWord.textContent = words[Math.floor(Math.random() * words.length)];
