@@ -35,7 +35,6 @@ body .heartContainer p {
 }
 body .restartButtons {
   margin-bottom: 40px;
-  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,9 +49,6 @@ body .restartButtons button {
   font-size: 20px;
   color: #4d0303;
   text-align: center;
-}
-body .restartButtons .revealWord {
-  margin-top: 40px;
 }
 body .wordDisplay {
   text-align: center;

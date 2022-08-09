@@ -1,4 +1,4 @@
-let words = ["education",  "principle", "defendant",  "incentive"];
+let words = ["education",  "principle", "defendant",  "incentive", "jackscrew", "maximizer", ];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
