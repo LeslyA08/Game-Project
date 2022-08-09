@@ -11,6 +11,7 @@ let letter = "A-Z";
 let lettersDiv = document.querySelector(".lettersDiv");
 let revealWord = document.querySelector(".revealWord");
 let hearts = document.querySelector("p");
+let restart = document.querySelector(".restartButton")
 
 newWord.addEventListener('click', () =>{
     finalWord = randomWord.replace(/[a-z]/gi, '-');
@@ -20,8 +21,12 @@ newWord.addEventListener('click', () =>{
 
 revealWord.addEventListener('click', () =>{
     displayedWord.textContent = randomWord;
-    button.disabled = false;
 })
+
+restart.addEventListener('click', () =>{
+   window.location.reload();
+})
+
 
 letterBtn.forEach((letter) => {
     letter.addEventListener('click', () =>{
@@ -34,6 +39,9 @@ letterBtn.forEach((letter) => {
                     dashArr[index] = char;
                     let newString = dashArr.join("");
                     displayedWord.textContent = newString;
+                    if (randomWord === displayedWord.textContent.toLowerCase()) {
+                        hearts.textContent = "You Win"
+                         }
                 }
             })
         
