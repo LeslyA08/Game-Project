@@ -38,10 +38,11 @@ letterBtn.forEach((letter) => {
             })
         
         } else {
-            console.log("wrong letter")
             let heartArr = hearts.textContent
             hearts.textContent = heartArr.slice(0, -1);
-           // if reaches 0, you lose alert
+            if (heartArr.length == 1) {
+           hearts.textContent = "You Lose"
+            }
         }
     })
 })
