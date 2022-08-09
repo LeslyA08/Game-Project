@@ -27,8 +27,8 @@ once all that is displayed:
 
     things left:
 
-    -randomize word after every click
+    -randomize word after every click ==
     -You won 
     -minus a heart whenever you click the wrong letter
-    -lock the letter buttons after every click
+    -lock the letter buttons after every click--
     -you lose sign once you reach 0 lives (of 6)

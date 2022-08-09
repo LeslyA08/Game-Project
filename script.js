@@ -1,4 +1,4 @@
-let words = ["education", "voter", "principle", "defendant", "elapse", "incentive"];
+let words = ["education",  "principle", "defendant",  "incentive"];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
@@ -11,7 +11,9 @@ let lettersDiv = document.querySelector(".lettersDiv");
 let revealWord = document.querySelector(".revealWord")
 
 newWord.addEventListener('click', () =>{
+    finalWord = randomWord.replace(/[a-z]/gi, '-');
     displayedWord.textContent = finalWord;
+    randomWord =words[Math.floor(Math.random() * words.length)];
  });
 
 revealWord.addEventListener('click', () =>{
@@ -22,19 +24,17 @@ letterBtn.forEach((letter) => {
     letter.addEventListener('click', () =>{
         letter.disabled = true;
         let charArray = randomWord.split("");
-        let dashes = finalWord;
         if (charArray.includes((letter.textContent).toLowerCase())) {
             charArray.forEach((char, index) => {
                 if (char == letter.textContent.toLowerCase()){
-                    const dashArr = dashes.split("");
+                    const dashArr = displayedWord.textContent.split("");
                     dashArr[index] = char;
                     let newString = dashArr.join("");
                     displayedWord.textContent = newString;
-                    //displayedWord.append(charArray);
                 }
-                if (char != letter.textContent.toLowerCase()) {
+               // if (char != letter.textContent.toLowerCase()) {
 
-                }
+                //}
             })
         }
     })
