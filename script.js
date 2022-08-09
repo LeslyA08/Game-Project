@@ -20,6 +20,7 @@ revealWord.addEventListener('click', () =>{
 
 letterBtn.forEach((letter) => {
     letter.addEventListener('click', () =>{
+        letter.disabled = true;
         let charArray = randomWord.split("");
         let dashes = finalWord;
         if (charArray.includes((letter.textContent).toLowerCase())) {
@@ -29,6 +30,10 @@ letterBtn.forEach((letter) => {
                     dashArr[index] = char;
                     let newString = dashArr.join("");
                     displayedWord.textContent = newString;
+                    //displayedWord.append(charArray);
+                }
+                if (char != letter.textContent.toLowerCase()) {
+
                 }
             })
         }

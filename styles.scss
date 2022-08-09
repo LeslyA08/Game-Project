@@ -18,6 +18,9 @@ body{
         font-weight: 800;
         color: rgb(77, 3, 3);
     }
+    button:disabled{
+        background-color: blue;
+    }
 }
 
     .heartContainer {
@@ -45,6 +48,9 @@ body{
         font-size: 20px;
         color:rgb(77, 3, 3);
         text-align: center;
+    }
+    .revealWord{
+        margin-top: 40px;
     }
 }
 

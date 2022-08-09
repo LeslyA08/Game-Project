@@ -24,3 +24,11 @@ once all that is displayed:
     switch out hearts to actual hang man
     draw 7 seperate images and change them each time
     -can do this after implementing hearts first
+
+    things left:
+
+    -randomize word after every click
+    -You won 
+    -minus a heart whenever you click the wrong letter
+    -lock the letter buttons after every click
+    -you lose sign once you reach 0 lives (of 6)
