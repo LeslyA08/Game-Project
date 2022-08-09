@@ -2,13 +2,15 @@ let words = ["education",  "principle", "defendant",  "incentive"];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
+let button = document.querySelectorAll("button")
 let displayedWord = document.querySelector(".wordDisplay");
 let newWord = document.querySelector(".newWord");
-let randomWord =words[Math.floor(Math.random() * words.length)]
+let randomWord =words[Math.floor(Math.random() * words.length)];
 let finalWord = randomWord.replace(/[a-z]/gi, '-');
-let letter = "A-Z"
+let letter = "A-Z";
 let lettersDiv = document.querySelector(".lettersDiv");
-let revealWord = document.querySelector(".revealWord")
+let revealWord = document.querySelector(".revealWord");
+let hearts = document.querySelector("p");
 
 newWord.addEventListener('click', () =>{
     finalWord = randomWord.replace(/[a-z]/gi, '-');
@@ -18,6 +20,7 @@ newWord.addEventListener('click', () =>{
 
 revealWord.addEventListener('click', () =>{
     displayedWord.textContent = randomWord;
+    button.disabled = false;
 })
 
 letterBtn.forEach((letter) => {
@@ -26,16 +29,19 @@ letterBtn.forEach((letter) => {
         let charArray = randomWord.split("");
         if (charArray.includes((letter.textContent).toLowerCase())) {
             charArray.forEach((char, index) => {
-                if (char == letter.textContent.toLowerCase()){
-                    const dashArr = displayedWord.textContent.split("");
+                if (char === letter.textContent.toLowerCase()){
+                    let dashArr = displayedWord.textContent.split("");
                     dashArr[index] = char;
                     let newString = dashArr.join("");
                     displayedWord.textContent = newString;
                 }
-               // if (char != letter.textContent.toLowerCase()) {
-
-                //}
             })
+        
+        } else {
+            console.log("wrong letter")
+            let heartArr = hearts.textContent
+            hearts.textContent = heartArr.slice(0, -1);
+           // if reaches 0, you lose alert
         }
     })
 })
