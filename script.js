@@ -1,5 +1,5 @@
 let words = ["education",  "principle", "defendant",  "incentive", "jackscrew", "maximizer", "kickboxer", "bamboozle", "checkmark", "lockboxes",
-];
+"knockoffs", "chuckling", "squeaking", "enjoyment"];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
