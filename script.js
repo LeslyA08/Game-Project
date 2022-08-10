@@ -9,7 +9,7 @@ let newWord = document.querySelector(".newWord");
 let randomWord =words[Math.floor(Math.random() * words.length)];
 // let wordsArr = words[randomWord]
 let finalWord = randomWord.replace(/[a-z]/gi, '-');
-let letter = "A-Z";
+let letter = "a-z";
 let lettersDiv = document.querySelector(".lettersDiv");
 let revealWord = document.querySelector(".revealWord");
 let hearts = document.querySelector("p");
@@ -36,14 +36,14 @@ letterBtn.forEach((letter) => {
     letter.addEventListener('click', () =>{
         letter.disabled = true;
         let charArray = randomWord.split("");
-        if (charArray.includes((letter.textContent).toLowerCase())) {
+        if (charArray.includes((letter.textContent))) {
             charArray.forEach((char, index) => {
-                if (char === letter.textContent.toLowerCase()){
+                if (char === letter.textContent){
                     let dashArr = displayedWord.textContent.split("");
                     dashArr[index] = char;
                     let newString = dashArr.join("");
                     displayedWord.textContent = newString;
-                    if (randomWord === displayedWord.textContent.toLowerCase()) {
+                    if (randomWord === displayedWord.textContent) {
                         hearts.textContent = "You Win"
                          }
                 }
