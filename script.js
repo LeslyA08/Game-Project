@@ -1,4 +1,5 @@
-let words = ["education",  "principle", "defendant",  "incentive", "jackscrew", "maximizer", ];
+let words = ["education",  "principle", "defendant",  "incentive", "jackscrew", "maximizer", "kickboxer", "bamboozle", "checkmark", "lockboxes",
+];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
@@ -6,6 +7,7 @@ let button = document.querySelectorAll("button")
 let displayedWord = document.querySelector(".wordDisplay");
 let newWord = document.querySelector(".newWord");
 let randomWord =words[Math.floor(Math.random() * words.length)];
+// let wordsArr = words[randomWord]
 let finalWord = randomWord.replace(/[a-z]/gi, '-');
 let letter = "A-Z";
 let lettersDiv = document.querySelector(".lettersDiv");
@@ -17,6 +19,8 @@ newWord.addEventListener('click', () =>{
     finalWord = randomWord.replace(/[a-z]/gi, '-');
     displayedWord.textContent = finalWord;
     randomWord =words[Math.floor(Math.random() * words.length)];
+   /* wordsArr = words[randomWord];
+    words.splice(randomWord, 1) */
  });
 
 revealWord.addEventListener('click', () =>{
