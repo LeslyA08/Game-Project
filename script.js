@@ -1,5 +1,5 @@
 let words = ["education",  "principle", "defendant",  "incentive", "jackscrew", "maximizer", "kickboxer", "bamboozle", "checkmark", "lockboxes",
-"knockoffs", "chuckling", "squeaking", "enjoyment"];
+"knockoffs", "chuckling", "squeaking", "enjoyment", "kangaroos", "obnoxious", "paintball", "qualified", "radiation"];
 
 
 let letterBtn = document.querySelectorAll(".letterBtn")
@@ -66,7 +66,7 @@ letterBtn.forEach((letter) => {
 })
 
 /*letterBtn.forEach((letter) => {
-        if (displayedWord.textContent == ""){
+        if (displayedWord.textContent == ''){
             letter.disabled = true
             } else {
             letter.disabled = false
