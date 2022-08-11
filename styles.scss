@@ -17,6 +17,7 @@ body{
         width: 50px;
         font-weight: 800;
         color: rgb(77, 3, 3);
+        border-color:white;
     }
     button:disabled{
         background-color: blue;
@@ -48,6 +49,10 @@ body{
         font-size: 20px;
         color:rgb(77, 3, 3);
         text-align: center;
+        border-color:white;
+    }
+    button:disabled{
+        background-color: blue;
     }
 
 }

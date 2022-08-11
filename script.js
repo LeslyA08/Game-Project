@@ -15,12 +15,14 @@ let hearts = document.querySelector("p");
 let restart = document.querySelector(".restartButton")
 
 newWord.addEventListener('click', () =>{
+    newWord.disabled = true 
     finalWord = randomWord.replace(/[a-z]/gi, '-');
     displayedWord.textContent = finalWord;
     randomWord =words[Math.floor(Math.random() * words.length)];
  });
 
 revealWord.addEventListener('click', () =>{
+    revealWord.disabled = true
     displayedWord.textContent = randomWord;
 })
 
@@ -62,9 +64,3 @@ letterBtn.forEach((letter) => {
        
     })
 })
-
-
-
-/*if (hearts.textContent = "You Lose" || "You Win") {
-            letterBtn.disabled = true;
-        }*/
