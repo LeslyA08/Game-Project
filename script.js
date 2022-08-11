@@ -7,7 +7,6 @@ let button = document.querySelectorAll("button")
 let displayedWord = document.querySelector(".wordDisplay");
 let newWord = document.querySelector(".newWord");
 let randomWord =words[Math.floor(Math.random() * words.length)];
-// let wordsArr = words[randomWord]
 let finalWord = randomWord.replace(/[a-z]/gi, '-');
 let letter = "a-z";
 let lettersDiv = document.querySelector(".lettersDiv");
@@ -19,8 +18,6 @@ newWord.addEventListener('click', () =>{
     finalWord = randomWord.replace(/[a-z]/gi, '-');
     displayedWord.textContent = finalWord;
     randomWord =words[Math.floor(Math.random() * words.length)];
-   /* wordsArr = words[randomWord];
-    words.splice(randomWord, 1) */
  });
 
 revealWord.addEventListener('click', () =>{
@@ -36,7 +33,7 @@ letterBtn.forEach((letter) => {
     letter.addEventListener('click', () =>{
         letter.disabled = true;
         let charArray = randomWord.split("");
-        if (charArray.includes((letter.textContent))) {
+        if (charArray.includes(letter.textContent)) {
             charArray.forEach((char, index) => {
                 if (char === letter.textContent){
                     let dashArr = displayedWord.textContent.split("");
@@ -56,5 +53,11 @@ letterBtn.forEach((letter) => {
            hearts.textContent = "You Lose"
             }
         }
+       
     })
 })
+
+
+/*if (hearts.textContent = "You Lose" || "You Win") {
+            letter.disabled = true;
+        }*/

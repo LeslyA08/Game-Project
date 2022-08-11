@@ -2,7 +2,7 @@ A simple game of hangman made from scratch.
 
 Rules:
 
-Press new word button to start the game. 
+Press Start button to start the game. 
 Press the see word button if you cannot get the word.
 Press restart to restart the game.
 
