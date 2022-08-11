@@ -42,7 +42,9 @@ letterBtn.forEach((letter) => {
                     displayedWord.textContent = newString;
                     if (randomWord === displayedWord.textContent) {
                         hearts.textContent = "You Win"
-                         }
+                        letterBtn.forEach((letter) => {
+                        letter.disabled = true
+                        }) }
                 }
             })
         
@@ -51,13 +53,18 @@ letterBtn.forEach((letter) => {
             hearts.textContent = heartArr.slice(0, -1);
             if (heartArr.length == 1) {
            hearts.textContent = "You Lose"
+           letterBtn.forEach((letter) => {
+            letter.disabled = true
+        })
             }
+        
         }
        
     })
 })
 
 
+
 /*if (hearts.textContent = "You Lose" || "You Win") {
-            letter.disabled = true;
+            letterBtn.disabled = true;
         }*/
