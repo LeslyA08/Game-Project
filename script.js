@@ -22,7 +22,6 @@ newWord.addEventListener('click', () =>{
  });
 
 revealWord.addEventListener('click', () =>{
-    revealWord.disabled = true
     displayedWord.textContent = randomWord;
 })
 
@@ -63,4 +62,13 @@ letterBtn.forEach((letter) => {
         }
        
     })
+
 })
+
+/*letterBtn.forEach((letter) => {
+        if (displayedWord.textContent == ""){
+            letter.disabled = true
+            } else {
+            letter.disabled = false
+            }
+})*/
